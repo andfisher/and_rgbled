@@ -22,4 +22,6 @@ class And_RGBLed {
 		int _greenPin;
 };
 
+typedef And_RGBLed;
+
 #endif

@@ -2,13 +2,14 @@
 #include "Arduino.h"
 #include "And_RGBLed.h"
 
+And_RGBLed::And_RGBLed()
+{
+}
 And_RGBLed::And_RGBLed(int commonPin, int rPin, int gPin, int bPin) 
 {
-	int off;
+	int off = (commonPin == AND_COMMON_ANODE ? 255 : 0);
 
 	_commonPin = commonPin;
-	
-	off = (commonPin == AND_COMMON_ANODE ? 255 : 0);
 
 	_redPin = rPin;
 	_greenPin = gPin;
