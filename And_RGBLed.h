@@ -10,6 +10,7 @@
 class And_RGBLed {
 	public:
 		And_RGBLed(int commonPin, int rPin, int gPin, int bPin);
+		And_RGBLed(void);
 		void setColor(int r, int g, int b);
 	private:
 		int _commonPin;
